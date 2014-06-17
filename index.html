@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>DDSC Verbeteringen</title>
+    <meta name="description" content="Presentation of improvements made by Nelen & Schuurmans and Fugro">
+    <meta name="author" content="Fritz van Deventer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/theme/sky.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/css/zenburn.css">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+
+    .reveal i{
+    font-family: 'FontAwesome';
+    font-style: normal;
+    }
+    </style>
+
+  </head>
+  <body>
+
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>DDSC<h1><h1>Aanpassingen</h1>
+      </section>
+
+      <section>
+        <section>
+          <h2>Fritz van Deventer</h2>
+        </section>
+
+        <section>
+          <h3>Software Developer @ Nelen Schuurmans</h3>
+           <ul>
+            <li>Webinterface DDSC 2013</li>
+            <li>70% van de vebeteringen nu</li>
+          </ul>
+        </section>
+
+      </section>
+
+      <section>
+
+        
+      </section>
+
+      
+
+      <section>
+        <h3>Vragen?</h3>
+        <p>
+          <a href="mailto:fritz.vandeventer@nelen-schuurmans.nl"><i class="fa fa-envelope fa-4x"></i></a>
+          <a href="http://github.com/fritzvd"><i class="fa fa-github fa-4x"></i></a>
+          <a href="http://twitter.com/fritzvd"><i class="fa fa-twitter fa-4x"></i></a>
+          <a href="http://nl.linkedin.com/in/fritzvd"><i class="fa fa-linkedin fa-4x"></i></a>
+        </p>
+        <p><a href="http://ddsc.github.io/improvements-ddsc-q2/">http://ddsc.github.io/improvements-ddsc-q2/</a></p>
+      </section>
+    </div>
+</div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.min.js"></script>
+    <!-- <script src="bower_components/leaflet-dist/leaflet.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- BEGIN TimelineJS -->
+    <script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
+    <script>
+
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+          // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+          if (event.indexh == 5){ // assuming your 5th slide is the one with the map
+              // map.invalidateSize(false); // assuming that map holds the the reference to your leaflet instance
+              // console.log('mapping')
+          }
+      } );
+
+    </script>
+  </body>
+</html>
